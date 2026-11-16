@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><link rel="stylesheet" href="style.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CampusHub | Your University Portal</title>
 </head>
 <body>
 
-    <header>
-        <h1>CampusHub</h1>
-        <p>Your university community starts here.</p>
+    
+<header>
+    <div class="header-top">
+        <div>
+            <h1>CampusHub</h1>
+            <p>Your university community starts here.</p>
+        </div>
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="instructors.html">Instructors</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="announcements.html">Announcements</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="header-tools">
+            <form class="header-search" action="courses.html" method="get">
+                <label for="site-search" class="visually-hidden">
+                    Search CampusHub
+                </label>
+                <input
+                    type="search"
+                    id="site-search"
+                    name="search"
+                    placeholder="Search courses, events..."
+                >
+                <button type="submit" aria-label="Search">
+                    <span aria-hidden="true">⌕</span>
+                </button>
+            </form>
+
+            <a href="profile.html" class="profile-link">
+                <span class="profile-icon" aria-hidden="true">👤</span>
+                <span>Profile</span>
+            </a>
+        </div>
+    </div>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+        </ul>
+    </nav>
+</header>
+
 
     <main>
         <section aria-labelledby="hero-heading">
