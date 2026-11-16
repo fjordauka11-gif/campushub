@@ -1148,3 +1148,102 @@ body > header .profile-icon {
         justify-content: center;
     }
 }
+body {
+    background-image: url("./images/campus-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #F4F6FA;
+}
+/* CAMPUSHUB LOGO */
+
+body > header .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+body > header .logo h1 {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 1.8rem;
+}
+body > header .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+body > header .logo h1 {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 1.8rem;
+}
+/* COURSES HEADER - ONE HORIZONTAL LINE */
+
+body > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+body > header .logo {
+    flex-shrink: 0;
+}
+
+body > header > p {
+    display: none;
+}
+
+body > header nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 5px;
+}
+
+body > header nav a {
+    padding: 9px 10px;
+    white-space: nowrap;
+    font-size: 0.9rem;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 900px) {
+    body > header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    body > header nav ul {
+        flex-wrap: wrap;
+    }
+}
